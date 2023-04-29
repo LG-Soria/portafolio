@@ -29,7 +29,7 @@ const handleButtonClick = () => {
   
 <Navbar fluid={true} rounded={true}  >
 
-<Navbar.Brand >
+<Navbar.Brand className="flex justify-between" >
   
   <img src={logo}
     className="mr-1 ml-3 h-6 sm:h-9"
