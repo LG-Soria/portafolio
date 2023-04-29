@@ -3,7 +3,6 @@ import NavBars from "./NavBars";
 const Heading = () => {
   return (
     <>
-      <NavBars  />
       <section className="tituloContainer bg-bottom bg-contain">
     
         <h1 class="mb-4 ml-6 text-6xl font-extrabold text-gray-300 dark:text-white md:text-5xl lg:text-6xl">
