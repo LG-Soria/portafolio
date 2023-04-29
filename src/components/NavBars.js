@@ -25,9 +25,9 @@ const handleButtonClick = () => {
  }
  
   return (
-    <div className="p-4">
+<div className="p-4">
   
-  <Navbar fluid={true} rounded={true}  >
+<Navbar fluid={true} rounded={true}  >
 
 <Navbar.Brand >
   

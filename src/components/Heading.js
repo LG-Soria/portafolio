@@ -13,7 +13,7 @@ const Heading = () => {
           Developer
         </h1>
         <p class="text-lg ml-6 font-normal text-gray-300 lg:text-xl dark:text-gray-400">
-          Explorando mi creatividad atravez de JavaScript.
+          Explorando mi creatividad atravez de React.
         </p>
       </section>
     </>

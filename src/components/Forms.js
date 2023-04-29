@@ -38,7 +38,7 @@ const Forms = () => {
             Contactame!{" "}
           </h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-            Algo de lo que leiste te parecio interesante?<br></br>
+            Estas buscando que trabajemos juntos?<br></br>
             Mandame un email y pongamosnos en contacto.
           </p>
 
