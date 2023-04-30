@@ -40,8 +40,7 @@ const NavBars = () => {
 
         <div className="flex md:order-2">
           <Button
-            className="border-none bg-blue-600 hover:bg-blue-800 mr-4"
-            onClick={handleButtonClick}
+            
           >
             Conectemos
           </Button>
