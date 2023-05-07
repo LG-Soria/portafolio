@@ -8,7 +8,7 @@ i18next.init ({
         escapeValue: false,
     },
    
-    lng: window.location.pathname.substr(1, 2) === 'es' ? 'es' : 'en',
+    lng: window.location.pathname.substr(1, 2) === 'en' ? 'en' : 'es',
     resources: {
         es: {
             translation: esp,

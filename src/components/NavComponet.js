@@ -82,17 +82,17 @@ export default function Example() {
               </div>
 
               <div className='flex flex-row justify-between '>
-                <button className='mx-2' ><a href='/es/' ><CircleFlagsAr /></a></button>
-                <button><a href='/en/'> <CircleFlagsEn /></a></button>
+                <button className='mx-2' ><a href='portafolio/es/' ><CircleFlagsAr /></a></button>
+                <button><a href='portafolio/en/'> <CircleFlagsEn /></a></button>
 
               </div>            
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="absolute inset-y-0 right-14 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   className="border-none bg-blue-600 hover:bg-blue-800  p-2 px-3 rounded text-white hidden md:inline"
                   onClick={handleButtonClick}>Conectemos
                 </button> 
                 <button
-                  className="border-none bg-blue-600   p-0.5 px-1 rounded text-white mr-14  md:hidden"
+                  className="border-none bg-blue-600   p-0.5 px-1 rounded text-white left-6 md:hidden"
                   onClick={handleButtonClick}><Email />
                 </button>
 

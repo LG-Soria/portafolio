@@ -12,7 +12,7 @@ const Heading = () => {
           </span>{" "}
           Developer
         </h1>
-        <p class="text-lg ml-6 font-normal text-gray-300 lg:text-xl dark:text-gray-400">
+        <p class="text-lg font-normal ml-[-50px] text-gray-300 lg:text-xl dark:text-gray-400">
         {i18n.t('titleDescription')}
         </p>
       </section>
