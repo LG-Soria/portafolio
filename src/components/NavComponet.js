@@ -2,13 +2,17 @@ import { Fragment } from 'react'
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../img/navbarLogo.svg"
+import CircleFlagsAr from "./logos/CircleFlagsAr"
+import CircleFlagsEn from "./logos/CircleFlagsEn"
+import Email from "./logos/FluentEmojiFlatEnvelopeWithArrow"
+
 
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Inicio', href: '#', current: true },
   { name: 'Sobre Mi', href: '#sobreMi', current: false },
-  { name: 'Proyectos', href: '#skills', current: false },
-  { name: 'Skills', href: '#proyectos', current: false },
+  { name: 'Proyectos', href: '#proyectos', current: false },
+  { name: 'Tecnologias', href: '#skills', current: false },
 ]
 const handleButtonClick = () => {
   const formSection = document.querySelector("#form");
@@ -26,6 +30,7 @@ export default function Example() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
+
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -37,6 +42,7 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
+
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -75,10 +81,19 @@ export default function Example() {
 
               </div>
 
+              <div className='flex flex-row justify-between '>
+                <button className='mx-2' ><a href='/es/' ><CircleFlagsAr /></a></button>
+                <button><a href='/en/'> <CircleFlagsEn /></a></button>
+
+              </div>            
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
-                  className="border-none bg-blue-600 hover:bg-blue-800  p-2 px-3 rounded text-white"
+                  className="border-none bg-blue-600 hover:bg-blue-800  p-2 px-3 rounded text-white hidden md:inline"
                   onClick={handleButtonClick}>Conectemos
+                </button> 
+                <button
+                  className="border-none bg-blue-600   p-0.5 px-1 rounded text-white mr-14  md:hidden"
+                  onClick={handleButtonClick}><Email />
                 </button>
 
     

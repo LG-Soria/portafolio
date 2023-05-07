@@ -1,0 +1,21 @@
+export const eng = {
+    home: "Home",
+    about: "About me",
+    projects: "Projects",
+    contact: "Contact",
+    titleDescription: "Exploring my creativity with React.",
+    aboutTitle: "Who am I?",
+    aboutSubTitle: "I am an energetic and determined individual ",
+    aboutDescription: "who enjoys challenges and competition in order to achieve my goals. I consider myself confident and persevering, and prefer to actively seek things rather than waiting for them to happen. I have a wide variety of interests and am critical and incisive when approaching difficult problems and situations. I enjoy being a catalyst for change and striving for improvement, and prefer an environment that is constantly changing and adventurous. I am assertive and direct in my interpersonal relationships, and am motivated by my achievements. Additionally, I am independent and persistent in the face of barriers and obstacles, and enjoy working both alone and in groups.",
+    cvText: "Download CV",
+    projectsTitle: "Projects",
+    contactMe: "Contact me",
+    contactSub: "Are you looking to work together? Send me an email and let's get in touch.",
+    email: "Email",
+    emailPlaceholder:"name@example.com",
+    asunto:"Subject",
+    asuntoPlaceholder :"Let me know how I can help you",
+    message: "Message",
+    messagePlaceholder: "...",
+    send: "Send"
+}

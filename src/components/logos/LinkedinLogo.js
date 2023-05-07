@@ -1,6 +1,6 @@
 import React from "react";
 
-function LinkedinLogo() {
+function Linkedin() {
   return (
     <svg 
       enableBackground="new 0 0 32 32"
@@ -25,4 +25,4 @@ function LinkedinLogo() {
   );
 }
 
-export default LinkedinLogo;
+export default Linkedin;

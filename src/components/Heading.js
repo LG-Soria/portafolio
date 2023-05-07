@@ -1,3 +1,5 @@
+import i18n from "../i18n/index"
+
 
 const Heading = () => {
   return (
@@ -11,7 +13,7 @@ const Heading = () => {
           Developer
         </h1>
         <p class="text-lg ml-6 font-normal text-gray-300 lg:text-xl dark:text-gray-400">
-          Explorando mi creatividad atravez de React.
+        {i18n.t('titleDescription')}
         </p>
       </section>
     </>
