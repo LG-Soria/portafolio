@@ -7,16 +7,19 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import proyect1 from "../img/proyecto-1.jpg"
-import proyect2 from "../img/proyecto-2.jpg"
-import proyect3 from "../img/proyecto-3.jpg"
-
+import proyect1 from "../img/proyecto-1.jpg";
+import proyect2 from "../img/proyecto-2.jpg";
+import proyect3 from "../img/proyecto-3.jpg";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import LanguageIcon from '@mui/icons-material/Language';
 
 const ProyectosCarrusel = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4" /* Carousel for desktop and large size devices */>
-        
+      <div
+        className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4" /* Carousel for desktop and large size devices */
+      >
         <CarouselProvider /** Container o section principal */
           className="lg:block hidden"
           naturalSlideWidth={100}
@@ -26,7 +29,9 @@ const ProyectosCarrusel = () => {
           step={1}
           infinite={true}
         >
-          <div className="w-full relative flex items-center justify-center"/** caja donde estan los botones y el carrusel */>  
+          <div
+            className="w-full relative flex items-center justify-center" /** caja donde estan los botones y el carrusel */
+          >
             <ButtonBack
               role="button"
               aria-label="slide backward"
@@ -49,10 +54,11 @@ const ProyectosCarrusel = () => {
                 />
               </svg>
             </ButtonBack>
-            <div className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */> 
-              <Slider /** Slider */> 
-
-                <div   /**caja dentro del slider donde van los items a usar en un slide cada uno */
+            <div
+              className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */
+            >
+              <Slider /** Slider */>
+                <div /**caja dentro del slider donde van los items a usar en un slide cada uno */
                   id="slider"
                   className="h-full flex  lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
@@ -65,12 +71,23 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                         JavaScript + HTML + CSS
+                          JavaScript + HTML + CSS
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex flex-col-reverse h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
                             Portfolio v1
                           </h3>
+
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -86,10 +103,20 @@ const ProyectosCarrusel = () => {
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
                           HTML+CSS+JavaScript+Bootstrap
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex flex-col-reverse h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
                             Landing Page blog.
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/NewHomepageMain/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -105,10 +132,20 @@ const ProyectosCarrusel = () => {
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
                           React + NodeJs + ApiRest
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex h-full flex-col-reverse items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                           Portfolio de fotografia
+                            Portfolio de fotografia
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/photography-album-web/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -124,35 +161,24 @@ const ProyectosCarrusel = () => {
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
                           React + NodeJs + Mongodb
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex h-full  flex-col-reverse items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
                             Tienda de impresiones 3D
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
                   </Slide>
-                  <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative h-[600px] w-full sm:w-auto">
-                      <img
-                        src="https://i.ibb.co/fDngH9G/carosel-1.png"
-                        alt="black chair and white table"
-                        className="object-cover object-center w-full"
-                      />
-                      
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          React + NodeJs
-                        </h2>
-                        <div className="flex h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Landing Page inmoviliaria 
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </Slide>
-     
                 </div>
               </Slider>
             </div>
@@ -229,12 +255,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        JavaScript + HTML + CSS
+                          JavaScript + HTML + CSS
                         </h2>
                         <div className="flex h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Portfolio v1
+                            Portfolio v1
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -248,12 +284,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML+CSS+JavaScript+Bootstrap
+                          HTML+CSS+JavaScript+Bootstrap
                         </h2>
                         <div className="flex h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Landing Page blog.
+                            Landing Page blog.
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/NewHomepageMain/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -267,12 +313,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        React + NodeJs + ApiRest
+                          React + NodeJs + ApiRest
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex flex-col-reverse h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Portfolio de fotografia
+                            Portfolio de fotografia
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/photography-album-web/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -288,34 +344,24 @@ const ProyectosCarrusel = () => {
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
                           Catalog 2
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex flex-col-reverse h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
                             Minimal Interior
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
                   </Slide>
-                  <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                      <img
-                        src="https://i.ibb.co/fDngH9G/carosel-1.png"
-                        alt="black chair and white table"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          Catalog 2
-                        </h2>
-                        <div className="flex h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Minimal Interior
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </Slide>
-
                 </div>
               </Slider>
             </div>
@@ -392,12 +438,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        JavaScript + HTML + CSS
+                          JavaScript + HTML + CSS
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex h-full   flex-col-reverse items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Portfolio v1
+                            Portfolio v1
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -411,12 +467,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML+CSS+JavaScript+Bootstrap
+                          HTML+CSS+JavaScript+Bootstrap
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Landing Page blog.
+                            Landing Page blog.
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/NewHomepageMain/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -430,12 +496,22 @@ const ProyectosCarrusel = () => {
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        React + NodeJs + ApiRest
+                          React + NodeJs + ApiRest
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex  flex-col-reverse  h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Portfolio de fotografia
+                            Portfolio de fotografia
                           </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/photography-album-web/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
@@ -451,29 +527,20 @@ const ProyectosCarrusel = () => {
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
                           Catalog 2
                         </h2>
-                        <div className="flex h-full items-end pb-6">
+                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
                             Minimal Interior
                           </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </Slide>
-                  <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                      <img
-                        src="https://i.ibb.co/fDngH9G/carosel-1.png"
-                        alt="black chair and white table"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          Catalog 2
-                        </h2>
-                        <div className="flex h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Minimal Interior
-                          </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/portfolio/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
                         </div>
                       </div>
                     </div>
