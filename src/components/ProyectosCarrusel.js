@@ -10,6 +10,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import proyect1 from "../img/proyecto-1.jpg";
 import proyect2 from "../img/proyecto-2.jpg";
 import proyect3 from "../img/proyecto-3.jpg";
+import proyect4 from "../img/proyecto-4.jpg";
+import proyect5 from "../img/proyecto-5.jpg";
+
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import LanguageIcon from '@mui/icons-material/Language';
@@ -27,11 +30,10 @@ const ProyectosCarrusel = () => {
           totalSlides={5}
           visibleSlides={4}
           step={1}
-          infinite={true}
-        >
-          <div
-            className="w-full relative flex items-center justify-center" /** caja donde estan los botones y el carrusel */
-          >
+          infinite={true}>
+
+          <div className="w-full relative flex items-center justify-center" /** caja donde estan los botones y el carrusel */  >
+            
             <ButtonBack
               role="button"
               aria-label="slide backward"
@@ -54,9 +56,8 @@ const ProyectosCarrusel = () => {
                 />
               </svg>
             </ButtonBack>
-            <div
-              className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */
-            >
+            <div className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */>
+             
               <Slider /** Slider */>
                 <div /**caja dentro del slider donde van los items a usar en un slide cada uno */
                   id="slider"
@@ -153,21 +154,21 @@ const ProyectosCarrusel = () => {
                   <Slide index={3}>
                     <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
                       <img
-                        src="https://i.ibb.co/rFsGfr5/carosel-4.png"
-                        alt="sitting area"
+                        src={proyect4}
+                        alt="Apeperia Web"
                         className="object-cover object-center w-full"
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          React + NodeJs + Mongodb
+                          HTML + CSS + Metodologia BEM
                         </h2>
                         <div className="flex h-full  flex-col-reverse items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Tienda de impresiones 3D
+                            Apeperia Web - Oracle One
                           </h3>
                           <IconButton color="primary">
                             <a
-                              href="https://lg-soria.github.io/portfolio/"
+                              href="https://lg-soria.github.io/Apeperia-responsive/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -179,6 +180,36 @@ const ProyectosCarrusel = () => {
                       </div>
                     </div>
                   </Slide>
+                  <Slide index={4}>
+                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
+                      <img
+                        src={proyect5}
+                        alt="Fruto y Fruta Web Project"
+                        className="object-cover object-center w-full"
+                      />
+                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
+                        HTML + CSS + Metodologia BEM
+                        </h2>
+                        <div className="flex h-full  flex-col-reverse items-end pb-6">
+                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
+                          Fruta & Fruto WebSite - Oracle One
+                          </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
+                        </div>
+                      </div>
+                    </div>
+                  </Slide>
+                 
                 </div>
               </Slider>
             </div>
@@ -336,21 +367,50 @@ const ProyectosCarrusel = () => {
                   <Slide index={3}>
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
-                        src="https://i.ibb.co/rFsGfr5/carosel-4.png"
-                        alt="sitting area"
+                        src={proyect4}
+                        alt="Apeperia Web"
                         className="object-cover object-center w-full"
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          Catalog 2
+                        HTML + CSS + Metodologia BEM
                         </h2>
                         <div className="flex flex-col-reverse h-full items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Minimal Interior
+                          Apeperia Web - Oracle One
                           </h3>
                           <IconButton color="primary">
                             <a
-                              href="https://lg-soria.github.io/portfolio/"
+                              href="https://lg-soria.github.io/Apeperia-responsive/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
+                        </div>
+                      </div>
+                    </div>
+                  </Slide>
+                  <Slide index={4}>
+                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                      <img
+                        src={proyect5}
+                        alt="Fruto y Fruta Web Project"
+                        className="object-cover object-center w-full"
+                      />
+                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
+                        HTML + CSS + Metodologia BEM
+                        </h2>
+                        <div className="flex flex-col-reverse h-full items-end pb-6">
+                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
+                          Fruta & Fruto WebSite - Oracle One
+                          </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -519,21 +579,50 @@ const ProyectosCarrusel = () => {
                   <Slide index={3}>
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
-                        src="https://i.ibb.co/rFsGfr5/carosel-4.png"
-                        alt="sitting area"
+                        src={proyect4}
+                        alt="Apeperia Web"
                         className="object-cover object-center w-full"
                       />
                       <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                         <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          Catalog 2
+                        HTML + CSS + Metodologia BEM
                         </h2>
                         <div className="flex h-full  flex-col-reverse  items-end pb-6">
                           <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Minimal Interior
+                          Apeperia Web - Oracle One
                           </h3>
                           <IconButton color="primary">
                             <a
-                              href="https://lg-soria.github.io/portfolio/"
+                              href="https://lg-soria.github.io/Apeperia-responsive/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              <LanguageIcon fontSize="large" />
+                            </a>
+                          </IconButton>
+                        </div>
+                      </div>
+                    </div>
+                  </Slide>
+                  <Slide index={4}>
+                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                      <img
+                        src={proyect5}
+                        alt="Fruto y Fruta Web Project"
+                        className="object-cover object-center w-full"
+                      />
+                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
+                        HTML + CSS + Metodologia BEM
+                        </h2>
+                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
+                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
+                          Fruta & Fruto WebSite - Oracle One
+                          </h3>
+                          <IconButton color="primary">
+                            <a
+                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                               target="_blank"
                               rel="noreferrer"
                             >
