@@ -13,7 +13,6 @@ import proyect3 from "../img/proyecto-3.jpg";
 import proyect4 from "../img/proyecto-4.jpg";
 import proyect5 from "../img/proyecto-5.jpg";
 
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import LanguageIcon from '@mui/icons-material/Language';
 
@@ -365,7 +364,7 @@ const ProyectosCarrusel = () => {
                     </div>
                   </Slide>
                   <Slide index={3}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                    <div className="flex flex-shrink-0 relative w-full h-[518px] sm:w-auto">
                       <img
                         src={proyect4}
                         alt="Apeperia Web"
@@ -394,7 +393,7 @@ const ProyectosCarrusel = () => {
                     </div>
                   </Slide>
                   <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                    <div className="flex flex-shrink-0 relative w-full h-[518px] sm:w-auto">
                       <img
                         src={proyect5}
                         alt="Fruto y Fruta Web Project"
@@ -577,7 +576,7 @@ const ProyectosCarrusel = () => {
                     </div>
                   </Slide>
                   <Slide index={3}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
                       <img
                         src={proyect4}
                         alt="Apeperia Web"
@@ -606,7 +605,7 @@ const ProyectosCarrusel = () => {
                     </div>
                   </Slide>
                   <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
                       <img
                         src={proyect5}
                         alt="Fruto y Fruta Web Project"
