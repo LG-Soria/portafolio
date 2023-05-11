@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.f2e5045c.css",
-    "main.js": "/portafolio/static/js/main.bde9f2dc.js",
+    "main.js": "/portafolio/static/js/main.bb50ef7d.js",
     "static/media/fondo5.jpg": "/portafolio/static/media/fondo5.695e6576103e0f48e480.jpg",
     "static/media/foto1.jpg": "/portafolio/static/media/foto1.c339ac367329c3c7f782.jpg",
+    "static/media/proyecto-5.jpg": "/portafolio/static/media/proyecto-5.4e5773454a57d7cdd1ce.jpg",
     "static/media/proyecto-1.jpg": "/portafolio/static/media/proyecto-1.b80b9a172502b8c7cef7.jpg",
     "static/media/proyecto-3.jpg": "/portafolio/static/media/proyecto-3.96e1b0652322b11e5324.jpg",
+    "static/media/proyecto-4.jpg": "/portafolio/static/media/proyecto-4.b419efdfb68795d4deb7.jpg",
     "static/media/proyecto-2.jpg": "/portafolio/static/media/proyecto-2.a9467c921d3aa5820b9f.jpg",
     "static/media/cv.pdf": "/portafolio/static/media/cv.ce293cb0bc1fc519193c.pdf",
     "index.html": "/portafolio/index.html",
     "static/media/navbarLogo.svg": "/portafolio/static/media/navbarLogo.f04bf33b8e797a15776b155022aa822a.svg",
     "main.f2e5045c.css.map": "/portafolio/static/css/main.f2e5045c.css.map",
-    "main.bde9f2dc.js.map": "/portafolio/static/js/main.bde9f2dc.js.map"
+    "main.bb50ef7d.js.map": "/portafolio/static/js/main.bb50ef7d.js.map"
   },
   "entrypoints": [
     "static/css/main.f2e5045c.css",
-    "static/js/main.bde9f2dc.js"
+    "static/js/main.bb50ef7d.js"
   ]
 }
