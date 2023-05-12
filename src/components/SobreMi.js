@@ -6,7 +6,7 @@ import i18n from "../i18n/index"
 const SobreMi = () => {
 
   return (
-    <section id="sobreMi" className=" w-screen margin">
+    <section id="sobreMi" className=" w-screen margin ">
       <div class="flex-col mx-4 justify-center lg:flex lg:flex-row  containerSobreMi bg-white dark:bg-gray-800 overflow-hidden relative">
        
         <div class="text-center lg:text-start lg:pl-28  w-auto lg:w-1/2 py-12 px-2 sm:px-6 lg:py-16 ">
@@ -40,7 +40,7 @@ const SobreMi = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:h-auto  relative lg:top-16 ">
+        <div className="sm:w-3/5 sm:m-auto lg:m-2 w-full lg:w-1/2 lg:h-auto  relative lg:top-16 ">
           <img src={foto1} alt="foto_mia" className="m-auto w-3/4 lg:w-2/5 lg:h-2/3  mt-6 object-cover rounded-full " />
         </div>
       </div>

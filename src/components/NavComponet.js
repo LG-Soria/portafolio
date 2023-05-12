@@ -25,7 +25,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-slate-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
+                    className="block h-8 w-auto lg:hidden "
                     src={logo}
                     alt="Your Company"
                   />
@@ -56,19 +56,19 @@ export default function Example() {
                     src={logo}
                     alt="Your Company"
                   />
-                  <span className="self-center text-white px-2 whitespace-nowrap text-xl font-semibold dark:text-white">
+                  <span className="self-center text-black px-2 whitespace-nowrap text-xl font-semibold dark:text-white">
             LG Soria
           </span>
                 </div>
 
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex lg:ml-56 space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-slate-300 text-black' : 'text-gray-900 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -85,7 +85,9 @@ export default function Example() {
                 <button className='mx-2' ><a href='portafolio/es/' ><CircleFlagsAr /></a></button>
                 <button><a href='portafolio/en/'> <CircleFlagsEn /></a></button>
 
-              </div>            
+              </div>     
+
+                     
               <div className="absolute inset-y-0 right-14 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   className="border-none bg-blue-600 hover:bg-blue-800  p-2 px-3 rounded text-white hidden md:inline"

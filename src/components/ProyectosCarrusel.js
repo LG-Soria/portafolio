@@ -14,7 +14,8 @@ import proyect4 from "../img/proyecto-4.jpg";
 import proyect5 from "../img/proyecto-5.jpg";
 
 import IconButton from "@mui/material/IconButton";
-import LanguageIcon from '@mui/icons-material/Language';
+import LanguageIcon from "@mui/icons-material/Language";
+import ProyectoCard from "./ProyectosCard";
 
 const ProyectosCarrusel = () => {
   return (
@@ -29,10 +30,11 @@ const ProyectosCarrusel = () => {
           totalSlides={5}
           visibleSlides={4}
           step={1}
-          infinite={true}>
-
-          <div className="w-full relative flex items-center justify-center" /** caja donde estan los botones y el carrusel */  >
-            
+          infinite={true}
+        >
+          <div
+            className="w-full relative flex items-center justify-center" /** caja donde estan los botones y el carrusel */
+          >
             <ButtonBack
               role="button"
               aria-label="slide backward"
@@ -55,160 +57,62 @@ const ProyectosCarrusel = () => {
                 />
               </svg>
             </ButtonBack>
-            <div className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */>
-             
+            <div
+              className="w-11/12  mx-auto overflow-x-hidden overflow-y-hidden" /** caja donde esta el slider que es lo que hace el carrusel */
+            >
               <Slider /** Slider */>
                 <div /**caja dentro del slider donde van los items a usar en un slide cada uno */
                   id="slider"
                   className="h-full flex  lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
                   <Slide index={0}>
-                    <div className="flex flex-shrink-0 relative h-[600px] w-full sm:w-auto">
-                      <img
-                        src={proyect2}
-                        alt="Primer version de Portfolio web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          JavaScript + HTML + CSS
-                        </h2>
-                        <div className="flex flex-col-reverse h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio v1
-                          </h3>
 
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/portfolio/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                    <ProyectoCard
+                      image={proyect1}
+                      titulo="Portfolio de Fotografia"
+                      descripcion="Proyecto hecho con React & Redux"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/photography-album-web/"  />
+
                   </Slide>
                   <Slide index={1}>
-                    <div className="flex flex-shrink-0 h-[600px] relative w-full sm:w-auto">
-                      <img
-                        src={proyect3}
-                        alt="Landing Page de practica"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          HTML+CSS+JavaScript+Bootstrap
-                        </h2>
-                        <div className="flex flex-col-reverse h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Landing Page blog.
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/NewHomepageMain/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect2}
+                      titulo="Portfolio Personal V1"
+                      descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/portfolio/"
+                    />
                   </Slide>
                   <Slide index={2}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect1}
-                        alt="sitting area"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          React + NodeJs + ApiRest
-                        </h2>
-                        <div className="flex h-full flex-col-reverse items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio de fotografia
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/photography-album-web/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect3}
+                      titulo="HomePage Practica"
+                      descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/NewHomepageMain/"
+                    />
                   </Slide>
                   <Slide index={3}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect4}
-                        alt="Apeperia Web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex h-full  flex-col-reverse items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Apeperia Web - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Apeperia-responsive/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect4}
+                      titulo=" Apeperia Landing"
+                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Apeperia-responsive/"
+                    />
+                  
                   </Slide>
                   <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect5}
-                        alt="Fruto y Fruta Web Project"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex h-full  flex-col-reverse items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Fruta & Fruto WebSite - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect5}
+                      titulo=" Fruto & Fruta "
+                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
+                    />
+                  
                   </Slide>
-                 
                 </div>
               </Slider>
             </div>
@@ -277,149 +181,48 @@ const ProyectosCarrusel = () => {
                   className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
                   <Slide index={0}>
-                    <div className="flex flex-shrink-0 relative w-full h-[518px]  sm:w-auto">
-                      <img
-                        src={proyect2}
-                        alt="Primer version de Portfolio web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          JavaScript + HTML + CSS
-                        </h2>
-                        <div className="flex h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio v1
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/portfolio/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect1}
+                      titulo="Portfolio de Fotografia"
+                      descripcion="Proyecto hecho con React & Redux"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/photography-album-web/"  />
                   </Slide>
                   <Slide index={1}>
-                    <div className="flex flex-shrink-0 relative w-full h-[518px]  sm:w-auto">
-                      <img
-                        src={proyect3}
-                        alt="Landing page de practica"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          HTML+CSS+JavaScript+Bootstrap
-                        </h2>
-                        <div className="flex h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Landing Page blog.
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/NewHomepageMain/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect2}
+                      titulo="Portfolio Personal V1"
+                      descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/portfolio/"
+                    />
                   </Slide>
                   <Slide index={2}>
-                    <div className="flex flex-shrink-0 relative w-full h-[518px] sm:w-auto">
-                      <img
-                        src={proyect1}
-                        alt="Portfolio de fotografia"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          React + NodeJs + ApiRest
-                        </h2>
-                        <div className="flex flex-col-reverse h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio de fotografia
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/photography-album-web/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect3}
+                      titulo="HomePage Practica"
+                      descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/NewHomepageMain/"
+                    />
                   </Slide>
                   <Slide index={3}>
-                    <div className="flex flex-shrink-0 relative w-full h-[518px] sm:w-auto">
-                      <img
-                        src={proyect4}
-                        alt="Apeperia Web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex flex-col-reverse h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Apeperia Web - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Apeperia-responsive/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect4}
+                      titulo=" Apeperia Landing - Oracle One"
+                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Apeperia-responsive/"
+                    />
                   </Slide>
                   <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full h-[518px] sm:w-auto">
-                      <img
-                        src={proyect5}
-                        alt="Fruto y Fruta Web Project"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex flex-col-reverse h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Fruta & Fruto WebSite - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect5}
+                      titulo=" Fruto & Fruta LandingPage - Oracle One"
+                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
+                    />
                   </Slide>
                 </div>
               </Slider>
@@ -486,152 +289,51 @@ const ProyectosCarrusel = () => {
               <Slider>
                 <div
                   id="slider"
-                  className="h-full w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700"
+                  className="h-full w-full flex  lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700"
                 >
                   <Slide index={0}>
-                    <div className="flex flex-shrink-0 relative h-[600px] w-full sm:w-auto">
-                      <img
-                        src={proyect2}
-                        alt="Primer version de Portfolio web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          JavaScript + HTML + CSS
-                        </h2>
-                        <div className="flex h-full   flex-col-reverse items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio v1
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/portfolio/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect1}
+                      titulo="Portfolio de Fotografia"
+                      descripcion="Proyecto hecho con React & Redux"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/photography-album-web/"  />
                   </Slide>
                   <Slide index={1}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect3}
-                        alt="Landing page de practica"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          HTML+CSS+JavaScript+Bootstrap
-                        </h2>
-                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Landing Page blog.
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/NewHomepageMain/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect2}
+                      titulo="Portfolio Personal V1"
+                      descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/portfolio/"
+                    />
                   </Slide>
                   <Slide index={2}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect1}
-                        alt="Portfolio de fotografia"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                          React + NodeJs + ApiRest
-                        </h2>
-                        <div className="flex  flex-col-reverse  h-full items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                            Portfolio de fotografia
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/photography-album-web/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect3}
+                      titulo="HomePage Practica"
+                      descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/NewHomepageMain/"
+                    />
                   </Slide>
                   <Slide index={3}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect4}
-                        alt="Apeperia Web"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Apeperia Web - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Apeperia-responsive/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect4}
+                      titulo=" Apeperia Landing - Oracle One"
+                      descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Apeperia-responsive/"
+                    />
                   </Slide>
                   <Slide index={4}>
-                    <div className="flex flex-shrink-0 relative w-full h-[600px] sm:w-auto">
-                      <img
-                        src={proyect5}
-                        alt="Fruto y Fruta Web Project"
-                        className="object-cover object-center w-full"
-                      />
-                      <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">
-                        HTML + CSS + Metodologia BEM
-                        </h2>
-                        <div className="flex h-full  flex-col-reverse  items-end pb-6">
-                          <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">
-                          Fruta & Fruto WebSite - Oracle One
-                          </h3>
-                          <IconButton color="primary">
-                            <a
-                              href="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {" "}
-                              <LanguageIcon fontSize="large" />
-                            </a>
-                          </IconButton>
-                        </div>
-                      </div>
-                    </div>
+                  <ProyectoCard
+                      image={proyect5}
+                      titulo=" Fruto & Fruta LandingPage - Oracle One"
+                      descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
+                      enlace1="#"
+                      enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
+                    />
                   </Slide>
                 </div>
               </Slider>
