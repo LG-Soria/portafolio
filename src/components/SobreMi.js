@@ -6,8 +6,8 @@ import i18n from "../i18n/index"
 const SobreMi = () => {
 
   return (
-    <section id="sobreMi" className=" w-screen margin ">
-      <div class="flex-col mx-4 justify-center lg:flex lg:flex-row  containerSobreMi bg-white dark:bg-gray-800 overflow-hidden relative">
+    <section id="sobreMi" className=" w-11/12 mt-[250px] mx-32  ">
+      <div class="flex-col mx-4 justify-center lg:flex lg:flex-row  bg-white dark:bg-gray-800 overflow-hidden relative">
        
         <div class="text-center lg:text-start lg:pl-28  w-auto lg:w-1/2 py-12 px-2 sm:px-6 lg:py-16 ">
           <h2 class=" text-2xl mb-12 font-extrabold text-black dark:text-white sm:text-4xl">

@@ -9,7 +9,7 @@ import NavComponent from "./components/NavComponet"
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <NavComponent />
       <Heading />
       <SobreMi />

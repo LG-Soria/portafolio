@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
  const ProyectosCard = (props) => {
   return (
-    <Card sx={{minWidth:300, height: "90%"} } className='sm: w-1/5' >
+    <Card sx={{minWidth:300,width:300, height: 330, marginLeft: 2} } >
       <CardMedia
         component="img"
         alt="green iguana"
@@ -19,7 +19,7 @@ import Typography from '@mui/material/Typography';
         <Typography gutterBottom variant="h5" component="div">
           {props.titulo}
         </Typography>
-        <Typography variant="body2" color="text.secondary" >  
+        <Typography variant="body2" color="text.secondary"  >  
           {props.descripcion}
         </Typography>
       </CardContent>

@@ -95,7 +95,7 @@ const ProyectosCarrusel = () => {
                   <ProyectoCard
                       image={proyect4}
                       titulo=" Apeperia Landing"
-                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM"
                       enlace1="https://github.com/LG-Soria/Apeperia-responsive/"
                       enlace2="https://lg-soria.github.io/Apeperia-responsive/"
                     />
@@ -104,8 +104,8 @@ const ProyectosCarrusel = () => {
                   <Slide index={4}>
                   <ProyectoCard
                       image={proyect5}
-                      titulo=" Fruto & Fruta "
-                      descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
+                      titulo=" Fruto & Fruta Web "
+                      descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
                       enlace1="https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
                       enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                     />
@@ -252,15 +252,15 @@ const ProyectosCarrusel = () => {
 
         {/* Carousel for mobile and Small size Devices */}
         <CarouselProvider
-          className="block  md:hidden pl-48 "
+          className=" md:hidden  "
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
           totalSlides={5}
-          visibleSlides={3}
+          visibleSlides={1}
           step={1}
           infinite={true}
         >
-          <div className="w-full relative flex items-center justify-center">
+          <div className="w-80 relative flex items-center justify-center">
             <ButtonBack
               role="button"
               aria-label="slide backward"
@@ -276,8 +276,8 @@ const ProyectosCarrusel = () => {
               >
                 <path
                   d="M7 1L1 7L7 13"
-                  stroke="white"
-                  strokeWidth={2}
+                  stroke="black"
+                  strokeWidth={3}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
@@ -291,6 +291,7 @@ const ProyectosCarrusel = () => {
                 >
                   <Slide index={0}>
                   <ProyectoCard
+                  className="pr-[300px]"
                       image={proyect1}
                       titulo="Portfolio de Fotografia"
                       descripcion="Proyecto hecho con React & Redux"
@@ -318,7 +319,7 @@ const ProyectosCarrusel = () => {
                   <Slide index={3}>
                   <ProyectoCard
                       image={proyect4}
-                      titulo=" Apeperia Landing - Oracle One"
+                      titulo=" Apeperia Landing"
                       descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
                       enlace1="https://github.com/LG-Soria/Apeperia-responsive/"
                       enlace2="https://lg-soria.github.io/Apeperia-responsive/"
@@ -327,8 +328,8 @@ const ProyectosCarrusel = () => {
                   <Slide index={4}>
                   <ProyectoCard
                       image={proyect5}
-                      titulo=" Fruto & Fruta LandingPage - Oracle One"
-                      descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
+                      titulo=" Fruto & Fruta Web "
+                      descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing en el curso de Oracle One"
                       enlace1="https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
                       enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                     />
@@ -351,8 +352,8 @@ const ProyectosCarrusel = () => {
               >
                 <path
                   d="M1 1L7 7L1 13"
-                  stroke="white"
-                  strokeWidth={2}
+                  stroke="black"
+                  strokeWidth={3}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />

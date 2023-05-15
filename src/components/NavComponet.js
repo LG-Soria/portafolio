@@ -8,16 +8,34 @@ import Email from "./logos/FluentEmojiFlatEnvelopeWithArrow"
 
 
 
-const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Sobre Mi', href: '#sobreMi', current: false },
-  { name: 'Proyectos', href: '#proyectos', current: false },
-  { name: 'Tecnologias', href: '#skills', current: false },
-]
+
+
 const handleButtonClick = () => {
   const formSection = document.querySelector("#form");
   formSection.scrollIntoView({ behavior: "smooth" });
 };
+const handleProyectos = () => {
+  const proyectoSection = document.querySelector("#proyectos");
+  proyectoSection.scrollIntoView({ behavior: "smooth" });
+};
+
+const handleSobreMi = () => {
+  const sobreMiSection = document.querySelector("#sobreMi");
+  sobreMiSection.scrollIntoView({ behavior: "smooth" });
+};
+
+const handleSkills = () => {
+  const section = document.querySelector("#skills");
+  section.scrollIntoView({ behavior: "smooth" });
+};
+
+
+const navigation = [
+  { name: 'Inicio', href: '#', current: true },
+  { name: 'Sobre Mi', current: false, onClick: handleSobreMi},
+  { name: 'Proyectos',  current: false, onClick: handleProyectos },
+  { name: 'Tecnologias', current: false, onClick: handleSkills },
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -28,7 +46,7 @@ export default function Example() {
     <Disclosure as="nav" className="bg-slate-50">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 ">
             <div className="relative flex h-16 items-center justify-between">
 
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -64,17 +82,20 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex lg:ml-56 space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-slate-300 text-black' : 'text-gray-900 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <button onClick={item.onClick}>
+                        <a
+                      
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-slate-300 text-black' : 'text-gray-900 hover:bg-gray-700 hover:text-white',
+                        'rounded-md px-3 py-2 text-sm font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </a>
+                      </button>
                     ))}
                   </div>
                 </div>
