@@ -13,8 +13,6 @@ import proyect3 from "../img/proyecto-3.jpg";
 import proyect4 from "../img/proyecto-4.jpg";
 import proyect5 from "../img/proyecto-5.jpg";
 
-import IconButton from "@mui/material/IconButton";
-import LanguageIcon from "@mui/icons-material/Language";
 import ProyectoCard from "./ProyectosCard";
 
 const ProyectosCarrusel = () => {
@@ -71,7 +69,7 @@ const ProyectosCarrusel = () => {
                       image={proyect1}
                       titulo="Portfolio de Fotografia"
                       descripcion="Proyecto hecho con React & Redux"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/photography-album-web"
                       enlace2="https://lg-soria.github.io/photography-album-web/"  />
 
                   </Slide>
@@ -80,7 +78,7 @@ const ProyectosCarrusel = () => {
                       image={proyect2}
                       titulo="Portfolio Personal V1"
                       descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/portfolio/"
                       enlace2="https://lg-soria.github.io/portfolio/"
                     />
                   </Slide>
@@ -89,7 +87,7 @@ const ProyectosCarrusel = () => {
                       image={proyect3}
                       titulo="HomePage Practica"
                       descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/NewHomepageMain"
                       enlace2="https://lg-soria.github.io/NewHomepageMain/"
                     />
                   </Slide>
@@ -98,7 +96,7 @@ const ProyectosCarrusel = () => {
                       image={proyect4}
                       titulo=" Apeperia Landing"
                       descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Apeperia-responsive/"
                       enlace2="https://lg-soria.github.io/Apeperia-responsive/"
                     />
                   
@@ -108,7 +106,7 @@ const ProyectosCarrusel = () => {
                       image={proyect5}
                       titulo=" Fruto & Fruta "
                       descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
                       enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                     />
                   
@@ -185,7 +183,7 @@ const ProyectosCarrusel = () => {
                       image={proyect1}
                       titulo="Portfolio de Fotografia"
                       descripcion="Proyecto hecho con React & Redux"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/photography-album-web"
                       enlace2="https://lg-soria.github.io/photography-album-web/"  />
                   </Slide>
                   <Slide index={1}>
@@ -193,7 +191,7 @@ const ProyectosCarrusel = () => {
                       image={proyect2}
                       titulo="Portfolio Personal V1"
                       descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/portfolio"
                       enlace2="https://lg-soria.github.io/portfolio/"
                     />
                   </Slide>
@@ -202,7 +200,7 @@ const ProyectosCarrusel = () => {
                       image={proyect3}
                       titulo="HomePage Practica"
                       descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/NewHomepageMain"
                       enlace2="https://lg-soria.github.io/NewHomepageMain/"
                     />
                   </Slide>
@@ -211,7 +209,7 @@ const ProyectosCarrusel = () => {
                       image={proyect4}
                       titulo=" Apeperia Landing - Oracle One"
                       descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Apeperia-responsive/"
                       enlace2="https://lg-soria.github.io/Apeperia-responsive/"
                     />
                   </Slide>
@@ -220,7 +218,7 @@ const ProyectosCarrusel = () => {
                       image={proyect5}
                       titulo=" Fruto & Fruta LandingPage - Oracle One"
                       descripcion="Proyecto hecho con HTML, CSS, Metodologia BEM y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
                       enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                     />
                   </Slide>
@@ -254,11 +252,11 @@ const ProyectosCarrusel = () => {
 
         {/* Carousel for mobile and Small size Devices */}
         <CarouselProvider
-          className="block md:hidden "
+          className="block  md:hidden pl-48 "
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
           totalSlides={5}
-          visibleSlides={1}
+          visibleSlides={3}
           step={1}
           infinite={true}
         >
@@ -296,15 +294,15 @@ const ProyectosCarrusel = () => {
                       image={proyect1}
                       titulo="Portfolio de Fotografia"
                       descripcion="Proyecto hecho con React & Redux"
-                      enlace1="#"
-                      enlace2="https://lg-soria.github.io/photography-album-web/"  />
+                      enlace1="https://github.com/LG-Soria/photography-album-web"
+                      enlace2="https://lg-soria.github.io/photography-album-web/" />
                   </Slide>
                   <Slide index={1}>
                   <ProyectoCard
                       image={proyect2}
                       titulo="Portfolio Personal V1"
                       descripcion="Proyecto hecho con HTML, CSS, SASS y JavaScript"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/portfolio/"
                       enlace2="https://lg-soria.github.io/portfolio/"
                     />
                   </Slide>
@@ -313,7 +311,7 @@ const ProyectosCarrusel = () => {
                       image={proyect3}
                       titulo="HomePage Practica"
                       descripcion="Proyecto hecho con HTML, CSS y Bootstrap"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/NewHomepageMain"
                       enlace2="https://lg-soria.github.io/NewHomepageMain/"
                     />
                   </Slide>
@@ -322,7 +320,7 @@ const ProyectosCarrusel = () => {
                       image={proyect4}
                       titulo=" Apeperia Landing - Oracle One"
                       descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Apeperia-responsive/"
                       enlace2="https://lg-soria.github.io/Apeperia-responsive/"
                     />
                   </Slide>
@@ -331,7 +329,7 @@ const ProyectosCarrusel = () => {
                       image={proyect5}
                       titulo=" Fruto & Fruta LandingPage - Oracle One"
                       descripcion="Proyecto hecho con HTML, CSS y Estructura Atomic Desing"
-                      enlace1="#"
+                      enlace1="https://github.com/LG-Soria/Fruto-y-fruta-proyecto"
                       enlace2="https://lg-soria.github.io/Fruto-y-fruta-proyecto/"
                     />
                   </Slide>

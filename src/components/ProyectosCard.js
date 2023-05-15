@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
  const ProyectosCard = (props) => {
   return (
-    <Card sx={{minWidth:300, height: "90%"} } >
+    <Card sx={{minWidth:300, height: "90%"} } className='sm: w-1/5' >
       <CardMedia
         component="img"
         alt="green iguana"
@@ -24,7 +24,7 @@ import Typography from '@mui/material/Typography';
         </Typography>
       </CardContent>
       <CardActions className='sm: flex flex-row justify-center '>
-        <Button size="small"><a href={props.enlace1}> Ver en GitHub</a></Button>
+        <Button size="small"><a target='_blank' rel='noreferrer'  href={props.enlace1}> Ver en GitHub</a></Button>
         <Button size="small"><a target='_blank' rel='noreferrer' href={props.enlace2}> Ver Proyecto</a> </Button>
       </CardActions>
     </Card>
